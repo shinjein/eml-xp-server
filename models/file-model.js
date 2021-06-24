@@ -1,10 +1,14 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const fileSchema = new Schema({
-  title: String,
-  description: String,
-  imageUrl: String,
+const fileSchema = new mongoose.Schema({
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+  name: {
+    type: String,
+  },
 });
 
 const File = mongoose.model("File", fileSchema);

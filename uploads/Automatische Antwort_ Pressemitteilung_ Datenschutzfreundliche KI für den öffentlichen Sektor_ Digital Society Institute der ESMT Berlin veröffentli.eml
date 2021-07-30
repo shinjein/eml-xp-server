@@ -1,0 +1,269 @@
+Received: from DB7PR02MB5004.eurprd02.prod.outlook.com (2603:10a6:10:7e::17)
+ by AM5PR0202MB2675.eurprd02.prod.outlook.com with HTTPS; Tue, 22 Jun 2021
+ 09:32:23 +0000
+Received: from AM5PR1001CA0042.EURPRD10.PROD.OUTLOOK.COM
+ (2603:10a6:206:15::19) by DB7PR02MB5004.eurprd02.prod.outlook.com
+ (2603:10a6:10:7e::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4242.21; Tue, 22 Jun
+ 2021 09:32:22 +0000
+Received: from AM5EUR03FT042.eop-EUR03.prod.protection.outlook.com
+ (2603:10a6:206:15:cafe::f6) by AM5PR1001CA0042.outlook.office365.com
+ (2603:10a6:206:15::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4242.16 via Frontend
+ Transport; Tue, 22 Jun 2021 09:32:22 +0000
+Received: from mail1.esmt.org (193.175.6.4) by
+ AM5EUR03FT042.mail.protection.outlook.com (10.152.17.168) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4242.16 via Frontend Transport; Tue, 22 Jun 2021 09:32:22 +0000
+Received: from mail.esmt.org (B-MAIL-01.global.esmt.org [10.51.0.118])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mail1.esmt.org (Postfix) with ESMTPS id C638B3E806D
+	for <Press@esmtorg.mail.onmicrosoft.com>; Tue, 22 Jun 2021 11:32:18 +0200 (CEST)
+Received: from B-MAIL-01.global.esmt.org (10.51.0.118) by
+ B-MAIL-01.global.esmt.org (10.51.0.118) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.2242.10; Tue, 22 Jun 2021 11:32:18 +0200
+Received: from mail1.esmt.org (10.66.0.246) by B-MAIL-01.global.esmt.org
+ (10.51.0.118) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.2242.10 via
+ Frontend Transport; Tue, 22 Jun 2021 11:32:18 +0200
+Received: from c1591.mx.srv.dfn.de (c1591.mx.srv.dfn.de [194.95.238.96])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail1.esmt.org (Postfix) with ESMTPS id 5525F3E806D
+	for <Press@esmt.org>; Tue, 22 Jun 2021 11:32:18 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by c1591.mx.srv.dfn.de (Postfix) with ESMTP id 3896A240044
+	for <Press@esmt.org>; Tue, 22 Jun 2021 11:32:18 +0200 (CEST)
+Received: from c1591.mx.srv.dfn.de ([127.0.0.1])
+	by localhost (mgw2-erl.srv.dfn.de [127.0.0.1]) (amavisd-new, port 20063)
+	with ESMTP id nTq4K7xstqdg for <Press@esmt.org>;
+	Tue, 22 Jun 2021 11:32:17 +0200 (CEST)
+Received: from esa2.zeit.c3s2.iphmx.com (esa2.zeit.c3s2.iphmx.com [68.232.151.130])
+	by c1591.mx.srv.dfn.de (Postfix) with ESMTPS
+	for <Press@esmt.org>; Tue, 22 Jun 2021 11:32:17 +0200 (CEST)
+Received: from srv-mail-hhcas.zeit.de ([194.77.156.62])
+  by esa2.zeit.c3s2.iphmx.com with ESMTP/TLS/AES256-SHA256; 22 Jun 2021 08:32:11 -0100
+Received: from srv-mail-hhcas.zeit.de (172.20.10.53) by srv-mail-hhcas.zeit.de
+ (172.20.10.53) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2242.10; Tue, 22 Jun
+ 2021 11:32:10 +0200
+Received: from EUR01-DB5-obe.outbound.protection.outlook.com (104.47.2.53) by
+ srv-mail-hhcas.zeit.de (172.20.10.53) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2242.10 via Frontend Transport; Tue, 22 Jun 2021 11:32:10 +0200
+Received: from AM0PR03MB6195.eurprd03.prod.outlook.com (2603:10a6:20b:159::14)
+ by AM0PR03MB3844.eurprd03.prod.outlook.com (2603:10a6:208:6b::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4242.21; Tue, 22 Jun
+ 2021 09:32:07 +0000
+Received: from AM0PR03MB6195.eurprd03.prod.outlook.com ([::1]) by
+ AM0PR03MB6195.eurprd03.prod.outlook.com ([fe80::89ec:b7a2:fa81:2a5a%8]) with
+ Microsoft SMTP Server id 15.20.4242.019; Tue, 22 Jun 2021 09:32:06 +0000
+From: "Schmitt, Stefan" <stefan.schmitt@zeit.de>
+To: ESMT Press Relations <Press@esmt.org>
+Subject:
+	=?Windows-1252?Q?Automatische_Antwort:_Pressemitteilung:_Datenschutzfreun?=
+ =?Windows-1252?Q?dliche_KI_f=FCr_den_=F6ffentlichen_Sektor:_Digital_Socie?=
+ =?Windows-1252?Q?ty_Institute_der_ESMT_Berlin_ver=F6ffentlicht_gemeinsame?=
+ =?Windows-1252?Q?s_Positionspapier_mit_Xayn__?=
+Thread-Topic:
+	=?Windows-1252?Q?Pressemitteilung:_Datenschutzfreundliche_KI_f=FCr_den_?=
+ =?Windows-1252?Q?=F6ffentlichen_Sektor:_Digital_Society_Institute_der_ESM?=
+ =?Windows-1252?Q?T_Berlin_ver=F6ffentlicht_gemeinsames_Positionspapier_mi?=
+ =?Windows-1252?Q?t_Xayn__?=
+Thread-Index: AddnSMz8jgdB5aHARaa/B4mHKV0IEgAAKq8O
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Tue, 22 Jun 2021 09:32:06 +0000
+Message-ID:
+	<480ef3eb60744a39a10e480751320f4f@AM0PR03MB6195.eurprd03.prod.outlook.com>
+References:
+	<PAXPR02MB7437329D36655AE6252797DC94099@PAXPR02MB7437.eurprd02.prod.outlook.com>
+In-Reply-To:
+	<PAXPR02MB7437329D36655AE6252797DC94099@PAXPR02MB7437.eurprd02.prod.outlook.com>
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthSource:
+	AM5EUR03FT042.eop-EUR03.prod.protection.outlook.com
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Organization-Network-Message-Id:
+	460d4cde-f782-41fc-a281-08d93560a356
+X-MS-Exchange-Organization-SCL: 1
+X-MS-Exchange-Inbox-Rules-Loop: stefan.schmitt@zeit.de
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+received-spf: None (protection.outlook.com: mail1.esmt.org does not designate
+ permitted sender hosts)
+x-tm-as-result: No-10--2.594200-8.000000
+x-tm-as-user-blocked-sender: No
+x-tm-as-product-ver: SMEX-14.0.0.3006-8.6.1012-26234.006
+x-tm-as-user-approved-sender: No
+x-virus-scanned: Debian amavisd-new at mgw2-erl.srv.dfn.de
+dkim-signature: v=1; a=rsa-sha256; c=relaxed/simple;  d=zeit.de; i=@zeit.de;
+ l=2035; q=dns/txt; s=ciscoesa;  t=1624354338; x=1655890338;
+  h=from:to:subject:date:message-id:references:in-reply-to:   mime-version;
+  bh=bUPRGy/unyKkHoSeaVf0I3KMBzYpmn0DRLh4WFk2ALE=;
+  b=lmlk+WqLI65rlxYfEv4ONhbyErO07/wX7mburHGznUb1JxtuXlLb17EC
+   D2TM+jGXMXMTGpTYXLCfFQMhcb9mGM5Gk4dEFYIscWLLZdR6OKrWRrOr7
+   w4nxcdKIjNrLYEuZl+bQjNHB17uo8ODKyXyuUlEgRcHSIARfD9vXcKz6Q   I=;
+arc-seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=K3QDnMSpT+cQc01yYTtZd7cj8s3hp77B7L51cFTCYavhuhL5D2cVXqjEajgAokRpY8r7FwONXl4REX5tD5+r85DiZpTuKgMjKs/Sv+ixzZYsvbq/zLMHguEVIKQSKsg8gFiajBLLBmXM6Tg7MMs82uxISCjmtqj+zphBy4Ark9ovTTxRsDF3MmRSmXq0PZZFgKjYWox10VaPWW18JKIWWSDdngR+sUvwhOaE/dy8ZcGTej4EuwOTeWuJLnBD+tjp1qiVhfmXgn18u/CaOw1mP1UqB3NMr/XfkXUeswpcZEL9y+xB/QIOnj5IEA8Ephv+UTltn5yyzvlj7A9Btlcfgg==
+arc-message-signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=bUPRGy/unyKkHoSeaVf0I3KMBzYpmn0DRLh4WFk2ALE=;
+ b=A8f9caNKTDP0tGghpJSMtWpyAkTRh0iKho3EROX2h1P3eg4QhqC5vB4uSgE/BJPdYcRZ8GLqz7Prv3aRZTTHoq5S8Ni3LrpLDo8Ow8N5/V6n9SNt4JvK5Tql2n616deiV/4mVVpJ0cJoCrHEayyhqAQACXJjxRnZr6OyzpJKLCv/jMiQDW3AlFXednS+l9a8D31NigZE+x2CSn10wr59SRQBj846MM54uOzXD9zvUIafVU6FNPPycw0F6gtbT2DtwBS9Ck/IEmzU6BAHpaeiuItcFWmxeTkGocrsdLZfHUX/sXLotqq5q3AO9IqjK0MCY6lB/vdUjYNPKDyLjugF0Q==
+arc-authentication-results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.helo=am0pr03mb6195.eurprd03.prod.outlook.com; dmarc=pass action=none
+ header.from=zeit.de; dkim=pass header.d=zeit.de; arc=none
+authentication-results: spf=none (sender IP is 193.175.6.4)
+ smtp.helo=mail1.esmt.org; esmtorg.mail.onmicrosoft.com; dkim=pass (signature
+ was verified) header.d=zeit.de;esmtorg.mail.onmicrosoft.com; dmarc=pass
+ action=none header.from=zeit.de;compauth=pass reason=100
+x-ms-office365-filtering-correlation-id: 460d4cde-f782-41fc-a281-08d93560a356
+x-ms-traffictypediagnostic: AM0PR03MB3844:|DB7PR02MB5004:
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs:
+	<AM0PR03MB3844033E3C23CE94278DCE9AB8099@AM0PR03MB3844.eurprd03.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:262;OLM:262;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:193.175.6.4;CTRY:DE;LANG:de;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail1.esmt.org;PTR:mail1.esmt.org;CAT:NONE;SFS:(4636009)(26005)(22186003)(6916009)(55016002)(42882007)(78352004)(496002)(336012)(224303003)(8636004)(1096003)(7696005)(7636003)(58800400005)(9686003)(6506007)(24736004)(108616005)(7596003)(5660300002)(356005)(66574015)(83380400001)(35100500006)(34412001);DIR:INB;
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource:
+	AM5EUR03FT042.eop-EUR03.prod.protection.outlook.com
+x-ms-exchange-crosstenant-network-message-id:
+	460d4cde-f782-41fc-a281-08d93560a356
+x-ms-exchange-crosstenant-originalarrivaltime: 22 Jun 2021 09:32:22.2233 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: 0bbe8592-1487-47a8-be80-276796bfc2b0
+x-ms-exchange-transport-crosstenantheadersstamped: DB7PR02MB5004
+x-ms-exchange-transport-endtoendlatency: 00:00:01.1663983
+x-ms-exchange-processed-by-bccfoldering: 15.20.4242.023
+authentication-results-original: esmt.org; dkim=none (message not signed)
+ header.d=none;esmt.org; dmarc=none action=none header.from=zeit.de;
+x-microsoft-antispam-untrusted: BCL:0;
+x-microsoft-antispam-message-info-original:
+	ZorJU0o4ytcpdNLQ0CUZsIgWmxU9YfrtowoemRmrPTyOEET8LkLgQ7b3BHbFbs6rGKgzc0znwjd+pLyZeFxauUcmyuc9w6md6WxeXZpUOgNg4EZ/QQAQbTQCRi3Njp09l0814BvExuZPJoZg/RZYdEIdL4yC/IVC1wMHOnSsv/sNdzKZYIrdzyeHsh3FbsgF6SDT/JbYoUjehBZJpyNXVHlrNhLYtQceCW9uXr2QlFdG+IC4BmcBhWJ0sjzYx2lDDLHp4sIj0hOlYmd872fONgwlB/85piqAFxIyr4AnokQmxW5UH7yrZQo6j25Hff3bQ32Z26KTMQm9/54oR0uYPRXlLQQeB96PLtjUi+TdC1n9MyDfa7flVbyB1yy9AZvwe9PL3sN802upeqmk8mI2+amU/Ul/lyeky4TsiCaKTbOrHKcC/cDR5W7q1TqJBP24ubM9x9EYbAF3+taglvb4wHX9iP81ENIGcW7kDLalRr3lVJc7qYLxzYZmMecqkfYOQlYurMmoM8N8oP4t0TZt4T4hxosB3h94l/gFynKA+H43+zkoQWLVYmiuh0uiDb1q
+x-forefront-antispam-report-untrusted:
+	CIP:255.255.255.255;CTRY:;LANG:de;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:AM0PR03MB6195.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:(346002)(366004)(136003)(376002)(396003)(39850400004)(6916009)(4744005)(42882007)(316002)(9686003)(498600001)(55016002)(66574015)(5660300002)(83380400001)(78352004)(224303003)(7696005)(66946007)(71200400001)(66556008)(6506007)(88996005)(122000001)(108616005)(24736004)(64756008)(2906002)(66446008)(66476007)(8936002)(34412001)(80100003);DIR:OUT;SFP:1501;
+x-eopattributedmessage: 0
+x-eoptenantattributedmessage: 0bbe8592-1487-47a8-be80-276796bfc2b0:0
+x-ms-exchange-transport-crosstenantheadersstripped:
+	AM5EUR03FT042.eop-EUR03.prod.protection.outlook.com
+x-ms-office365-filtering-correlation-id-prvs:
+	90aa7212-b1c3-4b29-19ae-08d935609a35
+x-ironport-av: E=Sophos;i="5.83,291,1616461200";
+    d="scan'208,217";a="49179685"
+x-organizationheaderspreserved: B-MAIL-01.global.esmt.org
+x-tmase-matchedrid: NFegCNR9p04TdnpMn3hCxSonxRgn1oH+bV89f0oQadROM3Q2krX96fPC
+	wxmwMoPj+irNAqpLOYJRS7xjEb+dxOeKNmNNd29XGMNE+ke6qFp8yGO3dvk8/UrRZP/NcCCSKCI
+	Zfr/sghk+NDIC//63iIZrqUkh2UQGUEK04/U2ghVZwLSBgxghaFTizEWrqKARMEEbHnwDcTfo9A
+	eqG6oG9jYN9dkm/V69UNDjd2RbdrnfX2sZfyOJoaubsOtSWY2QfyYDewMOrQAEs/H1wMyspmrz/
+	G/ZSbVqg+0Ra8/sXsW8AXbPBMqTHG2IQc4XifAGIvFHKEBfW9pLtnOu7QGbQF2Sas0CtIEj4eRI
+	kmkJCqHjNLBN1YvBJpv+bhDTAXAFN8Xp2odxhlD5UWncWf1oAimymRxyoJrzyJL24PUAc6aRC1r
+	P8dd+0dmoiqYkM2fh1u0nQlJXBAZqDPReFtPbjtEdP8PGKSf53/UU27Jyc79WXGvUUmKP2w==
+x-tmase-result: 10--2.594200-8.000000
+x-tmase-version: SMEX-14.0.0.3006-8.6.1012-26234.006
+x-tm-snts-smtp:
+	8DC55C8B8567420B84E807039DDD96E069BECF91B0EB9E5FCD212E76A7F9A6052000:8
+ironport-sdr:
+	amJJx5+UlMnpjnsZUBuZM/P65b4+qQWbVnG8ABsZlU4wllFGmfsmuywD3NlQB4j1A1YBXbOk5n
+ m67Ss7aWyBwaW10MYEEcZ7NAzmcVeIDZ3CzIlLxULqSyD7SMdTjQe8pz3ioNa2qwv6nuKao+zw
+ 7Za+FUhGUsjLPKlZUA4VLUjxIZtaO3TMrEWZRSJv+fQV7g5YR9e9elBllQelW3Vnu8ck4IuQFu
+ hzMCM+K5nR7798+MondkWaYUvyCH6HmmQH6yjBj0p7Q9GpDn26RMajAtT+/yteMCBxJ2Y9N7TS
+ XdI=
+x-crosspremisesheadersfilteredbysendconnector: B-MAIL-01.global.esmt.org
+x-amp-result: SKIPPED(no attachment in message)
+x-amp-file-uploaded: False
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520002050)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?ivSM2CI6Kl5I2YU976wr6PTFxsEzW0piI1tuE50HfRx4ChuRV8skESOr?=
+ =?Windows-1252?Q?skUbb8KmDkwjz6w4i07uWblpJ6xbAw7QimcBvE2CeSCie3Yfs/yu+q4J?=
+ =?Windows-1252?Q?OO4dj0ryE/nJcc4pSDDdCyifT6Sl6killsmLwgY7rOyj/k7AGy85R7Et?=
+ =?Windows-1252?Q?xvzcLmsgmzBnMBr0Lj8/FIHyQYWN+jk648f8sdY9V9rTWXmQsWFQuiRU?=
+ =?Windows-1252?Q?dig+4b+IQVVyhxlQlK5mMR4cyDvFup3gN8L0pW+hCtnopOClTYfab+Vp?=
+ =?Windows-1252?Q?tcb1b38OsaMjCUX4QtR9xyJ025E/pv59IF9Y5EkhnMC8JdC0J8KBpign?=
+ =?Windows-1252?Q?QWXs3Pt5qZeZW/ZMFb5/EEu7pMgEQDWIaB4fZyE5+JrepqaHv8Um8eVI?=
+ =?Windows-1252?Q?GmTsxctrguC+eprBmST4k+jgznx3kr1RerI9+VP/47rC3PPO+QkKZU1l?=
+ =?Windows-1252?Q?i7o8a9UUkS2knutl32ATY/aBQpC/8ytN2oTQtVC2H0t40rQNICZtyr8t?=
+ =?Windows-1252?Q?KEQq3nDr7SGbeklDuj3OGzzPm+ge5vILHsgmLeNMM/miEL5c/tN1eEOQ?=
+ =?Windows-1252?Q?vPxeSQ3oiH2/ytNkBHcDjSX882nbBI5eVBjeb5IHtDxwAfgp+YSJK9iH?=
+ =?Windows-1252?Q?G7wimy86+t7YQU2Vmg+lAcrOtUdUeTf7cENUlfXmqf4OpawZTd/aOuug?=
+ =?Windows-1252?Q?McaIrQ2YcLGWBjV4+DxsrrfKG72VmPrPU1MsvBkcgtpC9MAkf+W/OLo6?=
+ =?Windows-1252?Q?UYa5bIY9YmCnbZIJEqDZZiHSKqxYAP8ozbCduhu06KRxmyVsB1dNRHqi?=
+ =?Windows-1252?Q?WzrEHx0xulNcZxN76q5gHKmOgf4J/3gQdzzLZAPOnvMmdYr+bRIqK7QA?=
+ =?Windows-1252?Q?RcWD1FFTYp6u+kTvEmz2GEGT+p9slYNoB28NQ4wXzPxiY6EynvFAzaFD?=
+ =?Windows-1252?Q?Y4fh8N/fjAYmFNGC2cPQ/IWWGFh4OBwdcYky5LMx5L/SKHOPMTFJCh9y?=
+ =?Windows-1252?Q?xdUGufjsKNjj12kloEfV3b8W8WInx2T/0ZpMl6h/SqmACNxAa3BkOlEt?=
+ =?Windows-1252?Q?f0N4K+ZA9pbDngRVg9VPbdGMFDMpCn6ZQApW55oUQNj+WqdIh9k75CWu?=
+ =?Windows-1252?Q?e+B/FVHcItSNr0m7R5UsBdIRLdKBi/ewVFE0Pfa7u7ZGLO5OfwowVEMP?=
+ =?Windows-1252?Q?KkKTBCIodQawCiYFpB71F0HDU2Sr84oEJZYtSsK8lVVGBIlqPIKt/gXu?=
+ =?Windows-1252?Q?rwr7x5iA16ho5iZ74VL/+WEIxe39dchiLd4JAk1foN8/Estl6HJgs/DM?=
+ =?Windows-1252?Q?IcFRCP8obJA6prJc8sBR6s45Z0bTCPfX5vprhtCEmQ0ovS8v8eynV9Jo?=
+ =?Windows-1252?Q?F678w5gHZhlTbX52pmvzOfM2wcutjw26u7RFbh327QxlJs/+NkeP2dKG?=
+ =?Windows-1252?Q?O3rrevoSdIAECswkCjkU6Fg4Cfwt3nmDk1WTax8bCCd6c/Ud+RcEzWwD?=
+ =?Windows-1252?Q?1mix4h3ooy4H2UIO7qi4tuzugcZ9A/3g2MQn3kos4ixiEt621EVO2xy9?=
+ =?Windows-1252?Q?HiKwtKED7r52ojv7MwBtLJTGEM1AiOOvKbYXoyh7gNQj3nmUiN2+EXxg?=
+ =?Windows-1252?Q?0TzRGMS1Z4ehz/Mym1tDTTT02J2gJq7EqTmwqDbLKG0ho4rIC3aQKb36?=
+ =?Windows-1252?Q?zcinPvaRIoxAiWFwOZH+SvLRyzUVw/7N1gKMp19UuWeXZ/1MZjxbKa1d?=
+ =?Windows-1252?Q?9KsYFXudGIW0yvaw7XNjXnsN/F+A97oekBaJvzj9r93zCTzWDCbS9Hai?=
+ =?Windows-1252?Q?NWSm3T/SZoU9sMnl3LC6E1KnvCjx9Ji+XzVGP3WtBnD560+k?=
+Content-Type: multipart/alternative;
+	boundary="_000_480ef3eb60744a39a10e480751320f4fAM0PR03MB6195eurprd03pr_"
+MIME-Version: 1.0
+
+--_000_480ef3eb60744a39a10e480751320f4fAM0PR03MB6195eurprd03pr_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Ich kehre im Februar 2022 in die Redaktion zur=FCck. Nachrichten an diese A=
+dresse werden weder gelesen noch weitergeleitet. =96 Wenden Sie sich bitte =
+an Wissen-Assistenz@zeit.de
+
+
+I will return in February 2022. Messages to this account will neither be re=
+ad nor forwarded. =96 Meanwhile please contact Wissen-Assistenz@zeit.de
+
+--_000_480ef3eb60744a39a10e480751320f4fAM0PR03MB6195eurprd03pr_
+Content-Type: text/html; charset="Windows-1252"
+Content-ID: <9DC14383BA54E541AC874F152B0820E3@eurprd02.prod.outlook.com>
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta http-equiv=3D"Content-Style-Type" content=3D"text/css">
+<title></title>
+<meta name=3D"Generator" content=3D"Cocoa HTML Writer">
+<meta name=3D"CocoaVersion" content=3D"1671.6">
+<style type=3D"text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 16.0px Ca=
+libri; color: rgb(0, 0, 0); -webkit-text-stroke: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 16.0px Ca=
+libri; color: rgb(0, 0, 0); -webkit-text-stroke: #000000; min-height: 19.0p=
+x}
+span.s1 {font-kerning: none}
+</style>
+</head>
+<body>
+<p class=3D"p1"><span class=3D"s1">Ich kehre im Februar 2022 in die Redakti=
+on zur=FCck. Nachrichten an diese Adresse werden weder gelesen noch weiterg=
+eleitet. =96 Wenden Sie sich bitte an Wissen-Assistenz@zeit.de
+</span></p>
+<p class=3D"p2"><span class=3D"s1"></span><br>
+</p>
+<p class=3D"p1"><span class=3D"s1">I will return in February 2022. Messages=
+ to this account will neither be read nor forwarded. =96 Meanwhile please c=
+ontact Wissen-Assistenz@zeit.de</span></p>
+</body>
+</html>
+
+--_000_480ef3eb60744a39a10e480751320f4fAM0PR03MB6195eurprd03pr_--

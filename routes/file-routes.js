@@ -1,58 +1,27 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const multer =require("multer");
+const multer = require('multer');
+const upload = multer();
 const fs = require('fs');
+const simpleParser = require('mailparser').simpleParser;
 const File = require('../models/file-model');
-const emlformat = require('eml-format');
-const axios = require('axios');
 
-const multerStorage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "public");
-  },
-  filename: (req, file, cb) => {
-    const ext = file.mimetype.split("/")[1];
-    cb(null, `files/admin-${file.fieldname}-${Date.now()}.${ext}`);
-  },
-});
-
-const multerFilter = (req, file, cb) => {
-  if (file.mimetype.split("/")[1] === "eml") {
-    cb(null, true);
-  } else {
-    cb(new Error("Not an EML File!!"), false);
+router.post("/postfiles", upload.array("files", 10), async (req, res, next) => {
+  const { files, body: { name } } = req;
+  let mail = await simpleParser(files.buffer);
+    let rawBody = mail.text;
+    let cookedBody = rawBody.substring(0, 500);
+    console.log(cookedBody);
+  if (mail.headers.has('subject')) {
+    console.log(mail.headers.get('subject'))
   }
-};
-
-const upload = multer({
-  storage: multerStorage,
-  fileFilter: multerFilter,
-});
-
-
-router.post("/api/postfiles", upload.single('file'), async (req, res) => {
-  // Stuff to be added later
-  console.log(req.file);
-  try {
-    const newFile = await File.create({
-      name: req.file.filename,
-  });
-  res.status(200).json({
-    status: "success",
-    message: "File created successfully!!",
-  });
-} catch (error) {
-    res.json({
-      error,
-  });
-}
+  
 });
 
 module.exports = router;
-
 // router.post("/postfiles", obj (req, res) => { 
 //   try {
-//     const createFileDB = await Files.create({
+//     const createDB = await Files.create({
 //       uploadData
 //     })
 //     const files = req.body.uploadData;
@@ -67,6 +36,9 @@ module.exports = router;
 //     res.status(500).json(`error occurred ${e}`);
 //   }
 // });
+
+
+
 
 // //Get all projects
 // router.get("/projects", async (req, res) => {

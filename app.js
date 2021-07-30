@@ -1,4 +1,5 @@
 require("dotenv").config();
+require("./configs/multer");
 
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
@@ -9,7 +10,8 @@ const path = require("path");
 const multer = require("multer");
 const passport = require("passport");
 const cors = require("cors");
-const filesRoutes = require("./routes/file-routes");
+const mailparser = require("mailparser");
+
 //Include passport configuration
 // require("./configs/passport");
 
@@ -35,12 +37,12 @@ const app = express();
 
 // Middleware Setup
 app.use(logger("dev"));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-   extended: true 
-  })
-);
+
+app.use(bodyParser.json({limit: '1mb', extended: true}))
+app.use(bodyParser.urlencoded({limit: '1mb', extended: true}))
+
 app.use(express.static(`${__dirname}/uploads`));
+app.use(express.static("uploads"))
 
 app.use(cookieParser());
 //allows heroku to recieve connection from other websites

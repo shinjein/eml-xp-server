@@ -4,6 +4,7 @@ const User = require("../models/user-model");
 const bcrypt = require("bcryptjs");
 const GoogleStrategy = require("passport-google-oauth20");
 
+
 //Passport - Set the in the session
 passport.serializeUser((loggedInUser, cb) => {
   cb(null, loggedInUser._id);

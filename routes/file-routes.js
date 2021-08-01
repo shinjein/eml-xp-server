@@ -1,43 +1,29 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
-const upload = multer();
+const multer = require("multer");
 const fs = require('fs');
 const simpleParser = require('mailparser').simpleParser;
 const File = require('../models/file-model');
 
+const upload = multer({dest: 'uploads'});
+
 router.post("/postfiles", upload.array("files", 10), async (req, res, next) => {
-  const { files, body: { name } } = req;
-  let mail = await simpleParser(files.buffer);
-    let rawBody = mail.text;
-    let cookedBody = rawBody.substring(0, 500);
-    console.log(cookedBody);
-  if (mail.headers.has('subject')) {
-    console.log(mail.headers.get('subject'))
-  }
-  
+  const data = req.files;
+  console.log(data)
 });
 
-module.exports = router;
-// router.post("/postfiles", obj (req, res) => { 
-//   try {
-//     const createDB = await Files.create({
-//       uploadData
-//     })
-//     const files = req.body.uploadData;
-//       console.log(files);
-//     fs.readFileSync( req.body.uploadData, "utf-8"),
-//       emlformat.read(eml, function(error, data) {
-//         if (error) return console.log(error);
-//         fs.writeFileSync("sample.json", JSON.stringify(data, " ", 2));
-//           console.log(data);
-//     });
-//   } catch (e) {
-//     res.status(500).json(`error occurred ${e}`);
+// router.get()
+//   let mail = await simpleParser(files.buffer);
+//     let rawBody = mail.text;
+//     let cookedBody = rawBody.substring(0, 500);
+//     console.log(cookedBody);
+//   if (mail.headers.has('subject')) {
+//     console.log(mail.headers.get('subject'))
 //   }
-// });
+  
 
 
+module.exports = router;
 
 
 // //Get all projects

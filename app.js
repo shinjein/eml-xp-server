@@ -12,6 +12,8 @@ const passport = require("passport");
 const cors = require("cors");
 const mailparser = require("mailparser");
 
+const DIR = './uploads'
+
 //Include passport configuration
 // require("./configs/passport");
 

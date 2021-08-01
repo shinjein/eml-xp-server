@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const multerStorage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "uploads");
+    cb(null, '/uploads');
   },
   filename: (req, file, cb) => {
     const ext = file.mimetype.split("/")[1];
@@ -19,6 +19,6 @@ const multerFilter = (req, file, cb) => {
   }
 };
 
-const upload = multer({ storage: multerStorage }).single('file');
+const upload = multer({ storage: multerStorage }).array("files", 10);
 
 module.exports = upload;

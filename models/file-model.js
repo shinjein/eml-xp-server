@@ -6,8 +6,8 @@ const fileSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  file: {
-    type: String
+  files: {
+    type: Array
   },
 });
 

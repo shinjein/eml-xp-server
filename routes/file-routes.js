@@ -7,20 +7,28 @@ const File = require('../models/file-model');
 
 const upload = multer({dest: 'uploads'});
 
-router.post("/postfiles", upload.array("files", 10), async (req, res, next) => {
-  const data = req.files;
-  console.log(data)
+router.post("/postfiles", upload.array("files", 10), (req, res, next) => {
+  const files = req.files;
+    console.log("1. files_posted", files)
+  let file_names = [];
+  files.forEach( async (file) => {
+    let mail = await simpleParser(file.buffer);
+    const mail_text = mail.text.substring(0, 500);
+    console.log("2. file text extracted", mail_text);
+  });
 });
 
+  // let mail = await simpleParser(file.buffer);
+  // console.log(mail);
+
+// const mail_subject = null;
+// if (mail.headers.has('subject')) {
+//   const mail_subject = mail.headers.get('subject')
+//   console.log("3. subject headers", mail_subject)
+// }
+
 // router.get()
-//   let mail = await simpleParser(files.buffer);
-//     let rawBody = mail.text;
-//     let cookedBody = rawBody.substring(0, 500);
-//     console.log(cookedBody);
-//   if (mail.headers.has('subject')) {
-//     console.log(mail.headers.get('subject'))
-//   }
-  
+
 
 
 module.exports = router;

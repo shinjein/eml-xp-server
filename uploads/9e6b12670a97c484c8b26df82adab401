@@ -1,0 +1,228 @@
+Received: from VI1PR0201MB2349.eurprd02.prod.outlook.com
+ (2603:10a6:800:50::17) by AM5PR0202MB2675.eurprd02.prod.outlook.com with
+ HTTPS; Tue, 22 Jun 2021 09:33:37 +0000
+Received: from DBBPR09CA0012.eurprd09.prod.outlook.com (2603:10a6:10:c0::24)
+ by VI1PR0201MB2349.eurprd02.prod.outlook.com (2603:10a6:800:50::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4242.21; Tue, 22 Jun
+ 2021 09:33:35 +0000
+Received: from DB5EUR03FT037.eop-EUR03.prod.protection.outlook.com
+ (2603:10a6:10:c0:cafe::c1) by DBBPR09CA0012.outlook.office365.com
+ (2603:10a6:10:c0::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4242.18 via Frontend
+ Transport; Tue, 22 Jun 2021 09:33:35 +0000
+Received: from mail1.esmt.org (193.175.6.4) by
+ DB5EUR03FT037.mail.protection.outlook.com (10.152.20.215) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4242.16 via Frontend Transport; Tue, 22 Jun 2021 09:33:35 +0000
+Received: from mail.esmt.org (B-MAIL-01.global.esmt.org [10.51.0.118])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mail1.esmt.org (Postfix) with ESMTPS id 992743E806D
+	for <Press@esmtorg.mail.onmicrosoft.com>; Tue, 22 Jun 2021 11:33:34 +0200 (CEST)
+Received: from B-MAIL-01.global.esmt.org (10.51.0.118) by
+ B-MAIL-01.global.esmt.org (10.51.0.118) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.2242.10; Tue, 22 Jun 2021 11:33:32 +0200
+Received: from mail1.esmt.org (10.66.0.246) by B-MAIL-01.global.esmt.org
+ (10.51.0.118) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.2242.10 via
+ Frontend Transport; Tue, 22 Jun 2021 11:33:32 +0200
+Received: from a1591.mx.srv.dfn.de (a1591.mx.srv.dfn.de [194.95.232.96])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail1.esmt.org (Postfix) with ESMTPS id 5C09E3E806D
+	for <Press@esmt.org>; Tue, 22 Jun 2021 11:33:32 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by a1591.mx.srv.dfn.de (Postfix) with ESMTP id 4B829180027
+	for <Press@esmt.org>; Tue, 22 Jun 2021 11:33:32 +0200 (CEST)
+Received: from a1591.mx.srv.dfn.de ([127.0.0.1])
+	by localhost (mgw2-han.srv.dfn.de [127.0.0.1]) (amavisd-new, port 20063)
+	with ESMTP id BTL3unXrjhDy for <Press@esmt.org>;
+	Tue, 22 Jun 2021 11:33:30 +0200 (CEST)
+Received: from mail-wm1-f65.google.com (mail-wm1-f65.google.com [209.85.128.65])
+	by a1591.mx.srv.dfn.de (Postfix) with ESMTPS
+	for <Press@esmt.org>; Tue, 22 Jun 2021 11:33:30 +0200 (CEST)
+Received: by mail-wm1-f65.google.com with SMTP id v20-20020a05600c2154b02901dcefb16af0so1784481wml.5
+        for <Press@esmt.org>; Tue, 22 Jun 2021 02:33:30 -0700 (PDT)
+Received: by 2002:a05:600c:219:: with SMTP id 25mr2559250wmi.106; Tue, 22 Jun
+ 2021 02:33:23 -0700 (PDT)
+From: Mail Delivery Subsystem <mailer-daemon@googlemail.com>
+To: ESMT Press Relations <Press@esmt.org>
+Subject: Undeliverable: Delivery Status Notification (Failure)
+Thread-Topic: Delivery Status Notification (Failure)
+Thread-Index: AQHXZ0mtzJBxe+euH0W1waDmCkoDNw==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Tue, 22 Jun 2021 09:33:23 +0000
+Message-ID: <60d1ae63.1c69fb81.8530c.5457.GMR@mx.google.com>
+References:
+	<PAXPR02MB74376701F471DF47F068114194099@PAXPR02MB7437.eurprd02.prod.outlook.com>
+In-Reply-To:
+	<PAXPR02MB74376701F471DF47F068114194099@PAXPR02MB7437.eurprd02.prod.outlook.com>
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthSource:
+	DB5EUR03FT037.eop-EUR03.prod.protection.outlook.com
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Organization-Network-Message-Id:
+	c6221d96-8617-4cfa-0445-08d93560cec5
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+received-spf: None (protection.outlook.com: mail1.esmt.org does not designate
+ permitted sender hosts)
+x-virus-scanned: Debian amavisd-new at mgw2-han.srv.dfn.de
+dkim-signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=googlemail.com;
+ s=20161025;
+        h=to:auto-submitted:message-id:date:from:subject:references
+         :in-reply-to;        bh=3lhkJoh/i4LsCEjorIBVjcScbmlbI1BB2ghj3leR3Tg=;
+        b=Tf6iFpSjnixuMkNEsc2jBwHBv6f1giNo9jHybHrLCMYccz7QXOOoRDOuTvgRLK79Dw
+         1y2NxVRx6510LofC0SiNvy89Vz4EfPxNfwDa4LNxrSNnF0aTkWqQ1OFcaVrRbkDfHYc8
+         fs0V/SkEKqDQeQRQkwxHp+5Fz1Hw2wQHK+sXzwSYbIxzauyCztT3XCQCCbhrs6Y1cN81
+         K7huTSb/MVduuNf7Rcw3KGn5cB/RQOzNJ9m2bqux1N7mOHcAbemEw2t3mEM2g1nYowjE
+         hayj3S5NhMtj92MnmuESWcb8mdZRvcf1DA66iM02p4FF5mEpCbc6KBnRXZYpoEuoGFvh
+         /lnw==
+authentication-results: spf=none (sender IP is 193.175.6.4)
+ smtp.helo=mail1.esmt.org; esmtorg.mail.onmicrosoft.com; dkim=fail (body hash
+ did not verify) header.d=googlemail.com;esmtorg.mail.onmicrosoft.com;
+ dmarc=fail action=quarantine header.from=googlemail.com;compauth=none
+ reason=454
+x-ms-office365-filtering-correlation-id: c6221d96-8617-4cfa-0445-08d93560cec5
+x-ms-traffictypediagnostic: VI1PR0201MB2349:
+x-ms-oob-tlc-oobclassifiers: OLM:1751;
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:193.175.6.4;CTRY:DE;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail1.esmt.org;PTR:mail1.esmt.org;CAT:NONE;SFS:(4636009)(1930700014)(15650500001)(78352004)(9686003)(1406002)(8676002)(1096003)(76482006)(26005)(5660300002)(82202003)(83380400001)(42186006)(6916009)(7636003)(166002)(55446002)(356005)(42882007)(336012)(33964004)(966005)(7596003)(563144003);DIR:INB;
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource:
+	DB5EUR03FT037.eop-EUR03.prod.protection.outlook.com
+x-ms-exchange-crosstenant-network-message-id:
+	c6221d96-8617-4cfa-0445-08d93560cec5
+x-ms-exchange-crosstenant-originalarrivaltime: 22 Jun 2021 09:33:35.0718 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: 0bbe8592-1487-47a8-be80-276796bfc2b0
+x-ms-exchange-transport-crosstenantheadersstamped: VI1PR0201MB2349
+x-ms-exchange-transport-endtoendlatency: 00:00:02.6762060
+x-ms-exchange-processed-by-bccfoldering: 15.20.4242.023
+authentication-results-original: mgw2-han.srv.dfn.de (amavisd-new);	dkim=pass
+ (2048-bit key) header.d=googlemail.com
+x-eopattributedmessage: 0
+x-eoptenantattributedmessage: 0bbe8592-1487-47a8-be80-276796bfc2b0:0
+x-organizationheaderspreserved: B-MAIL-01.global.esmt.org
+x-crosspremisesheadersfilteredbysendconnector: B-MAIL-01.global.esmt.org
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520002050)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?pdVha+15BI/6V9IQ2HwL4/hBnwbNZT1csXhER7qG/Q0d4tZfhqWqrF46wahy?=
+ =?us-ascii?Q?jyezzD7V+W1uCzBdI81lUnQmLGadUQEjQRG1wn4AZhGHTviOl7y9FDjDT2Sh?=
+ =?us-ascii?Q?jx9HwP9NxUBi6nJ7Z8wyjd8iP24T5wfOzLwz7g/fWZw+MyWIjkZf8KM8byCg?=
+ =?us-ascii?Q?Mql0veEBIs/etrz2gPkNUrYmOkG+5prJMrBVq+tZh1bGYnyONbj1PMeCK2y4?=
+ =?us-ascii?Q?sjS1Zxg224CuBDs/2FY5B1CU84HkuOyvLB0lWP6z4tcYv/LfMK8e8vBKsaCQ?=
+ =?us-ascii?Q?AXDr2CQui2qXgg1RncfBbDfJIaaSzoryaPGs0WEoQ5sarvhtKgB/AsbtJlVK?=
+ =?us-ascii?Q?3KJ9TVldO+DHyBkwxt8Hr1Z/UUaHCfvOFTtvKOCeHy4cof7XBEB9b3k3oZGn?=
+ =?us-ascii?Q?Y9puHEy3XG+8zgBX2uPw+w6N4DiBCDwqr8HHd7alUabNzbInhLw++5rHuWve?=
+ =?us-ascii?Q?XZur7BoKTtrLxQegSdsQOS0m4CKp70pwPCFqvM6+UUscqvXy4+u9NrThC9wP?=
+ =?us-ascii?Q?SDKVOVlFbgSxdgCvMpN8mjeDMpQU65OgLzOJi6JmSVPrWPyvlrl/jFVFmmxn?=
+ =?us-ascii?Q?nRiu9Kq67pxeQKKQtzX9TCUg4r+3SaUhcKBzOJlcvbC5sYCuk+hIv2bLXV/V?=
+ =?us-ascii?Q?zggH7+sEH/IzsrG0kMJpweXUUuYtsJWShqrmN6RgMuhIUobReQHochXNHJZr?=
+ =?us-ascii?Q?xPftTUVG+uBd2q3E23laIMCB37WTH0f4qnYFTikdDt7SYZYBd2+788lrfpfc?=
+ =?us-ascii?Q?qUB7P5Wha9RUk3/clPvFz4Po7CE5ZvCpEbqsGjOVMXFQ/eNldkcgRF2oIWRV?=
+ =?us-ascii?Q?a5XU0MhbyRv7DCOQhbsUksr3T4ycEAWd9AmNugYZ5+on8QuZjv85xI1B/4QZ?=
+ =?us-ascii?Q?em3EuQcgUD2J9ElHVm68CPkhce9nsKZLxmSfej1oBU538zyvbTBTjJp4q6Ic?=
+ =?us-ascii?Q?A6f+o8brfgX1Es3W3gNMTx4yzDOSOH0o4e6UJPS8Mn/FZQ7DslBL0OANSelO?=
+ =?us-ascii?Q?ReYTb3dL4xAljcEzElyosUh6phSgKlwPhIcC1TDbvWyQpgUqCF4QOXa49Eqz?=
+ =?us-ascii?Q?FVIX5P0x98MXonBpRKkDHw32v5zOvETGStNPVsWjKqwADxiGtNPJdOL/z+qR?=
+ =?us-ascii?Q?lEH5QnJiClC3NqTzvyzMn8RiN5E5B1FYNAr0bJ7JTs/GSdu80a9xN28LFv7d?=
+ =?us-ascii?Q?ELvK/KBoVsTzF9U0VgCH+ejFscgFcmYF+xvqFpPGcjByAGJkrIM+O+fKcuGG?=
+ =?us-ascii?Q?sFh17rp9o7YC28jjJZp9wg8mRxfMaSetUSlaPFjHQAEjrIIoZVi1lEfKSQbI?=
+ =?us-ascii?Q?Y8lWnDpqOM1NHM5TECmDzKFI6xvJYzNRE49H71JOzlPbGpEYalWZQ/oMdoAP?=
+ =?us-ascii?Q?1chtYLEkxDvjGs/Q959DAl7kPf73gyqxL5oXK5AaFaq/leRq7bA9E6m6cjp5?=
+ =?us-ascii?Q?YYSiSYs/V/TbnYt3mgoc7OllDlpyXLNF7BuFbFhJjOsJy7QIBe4AIwZOAUL+?=
+ =?us-ascii?Q?5SXkv1WhgcfUmhaAgO6XfclQBn6NU+I7+P+aHcZFXHIm7Yjnc67JAS2Os937?=
+ =?us-ascii?Q?nC1fh5eiHTD0uSlejGPN2vTjTJSmGgvYNIstd0r/stv3dCq+bocVST2mwp5X?=
+ =?us-ascii?Q?V0d9ozqPiM0DGoUR7eFVAi/s1gtmQq1783PUgCsSGiqCYRLOq5cj+PB70gfg?=
+ =?us-ascii?Q?zr5IK7jqGIsPe9oZvysx8E8EkeBxz3sNObq2HEw0Wz94DWkODkqL4/kDJrlg?=
+ =?us-ascii?Q?UIO8Nk/8eX7zXoGexp4Xyp/A04Oa03YXf8odd0UOcsRbxy9JlvhEmaoGwPCv?=
+ =?us-ascii?Q?dnYTGClXwI4JMkI+albX2wan5i01oRHvpw0VLqLRhuMm7NuecViWFG2nJyFK?=
+ =?us-ascii?Q?vwjPC2+CDD4G1cboSLIgnMhVKkg1c5gGfgVzc3InXiw2l6ch5q/AMRxE4WpM?=
+ =?us-ascii?Q?jyg+H6URZGdWFrmBMM7ULQ=3D=3D?=
+Content-Type: multipart/report;
+	boundary="_000_60d1ae631c69fb818530c5457GMRmxgooglecom_";
+	report-type=delivery-status
+MIME-Version: 1.0
+
+--_000_60d1ae631c69fb818530c5457GMRmxgooglecom_
+Content-Type: multipart/alternative;
+	boundary="_002_60d1ae631c69fb818530c5457GMRmxgooglecom_"
+
+--_002_60d1ae631c69fb818530c5457GMRmxgooglecom_
+Content-Type: text/plain; charset="us-ascii"
+
+Delivery has failed to these recipients or groups:
+
+vera.hermes@meedia.de<mailto:vera.hermes@meedia.de>
+A problem occurred while delivering your message to this email address. Try sending your message again.
+
+
+
+Diagnostic information for administrators:
+
+Generating server: googlemail.com
+
+
+vera.hermes@meedia.de
+Remote Server returned '554 5.0.0 &lt; #5.0.0 smtp; The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/answer/6596&gt;'
+
+
+--_002_60d1ae631c69fb818530c5457GMRmxgooglecom_
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+</head>
+<body>
+<p><b><font color="#000066" size="3" face="Arial">Delivery has failed to these recipients or groups:</font></b></p>
+<font color="#000000" size="2" face="Tahoma">
+<p><a href="mailto:vera.hermes@meedia.de">vera.hermes@meedia.de</a><br>
+</font><font color="#000000" size="3" face="Arial">A problem occurred while delivering your message to this email address. Try sending your message again.
+<br>
+</font><font color="#000000" size="2" face="Tahoma"><br>
+</p>
+</font><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<font color="#808080" size="2" face="Tahoma">
+<p><b>Diagnostic information for administrators:</b></p>
+<p>Generating server: googlemail.com<br>
+</p>
+<p>vera.hermes@meedia.de<br>
+Remote Server returned '554 5.0.0 &lt; #5.0.0 smtp; The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/answer/6596&gt;'<br>
+</p>
+<pre></pre>
+<pre></pre>
+</font>
+</body>
+</html>
+
+--_002_60d1ae631c69fb818530c5457GMRmxgooglecom_--
+
+--_000_60d1ae631c69fb818530c5457GMRmxgooglecom_
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; googlemail.com
+
+Final-recipient: RFC822; vera.hermes@meedia.de
+Action: failed
+Status: 5.0.0
+X-Supplementary-Info: < #5.0.0 smtp; The email account that you tried to reach
+ does not exist. Please try double-checking the recipient's email address for
+ typos or unnecessary spaces. Learn more at
+ https://support.google.com/mail/answer/6596>
+
+
+--_000_60d1ae631c69fb818530c5457GMRmxgooglecom_--
